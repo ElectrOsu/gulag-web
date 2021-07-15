@@ -37,7 +37,7 @@
         </div>
         <div class="profile-flex">
             <div class="profile-avatar-area">
-                <img src="https://a.{{ domain() }}/{{ user['id'] }}" alt="avatar" class="rounded-avatar profile-avatar">
+                <img src="https://a.{{ domain() }}/{{ user['id'] }}" alt="avatar" class="rounded-avatar profile-avatar" style="border-radius: 50%">
             </div>
             <div class="bar-selection mode-selects">
                 <div class="select-left">
@@ -65,11 +65,6 @@
                         :class="'simple-banner-swtich ' + (mods == 'ap' ? 'selected ' : '') + (mode == 'mania' ? 'disabled':'') + (mode == 'catch' ? 'disabled':'') + (mode == 'taiko' ? 'disabled':'')"
                         @click="ChangeModeMods(mode,'ap')">Autopilot</a>
                 </div>
-            </div>
-            <div class="bar-selection badge-selects">
-                <span>
-                    Badges not yet implemented!
-                </span>
             </div>
         </div>
     </div>
